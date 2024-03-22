@@ -1,0 +1,30 @@
+.img {
+    background-color: rgb(243, 234, 222);
+    border-radius: 50%;
+    backdrop-filter: blur(8px);
+    opacity: 0.8;
+}
+
+.img img {
+    border-width: 5px;
+    /* Adjust border width as needed */
+    border-style: solid;
+    border-image: linear-gradient(to right, #f06262, #00ff00, #4a4af6);
+    /* Adjust gradient colors as needed */
+    border-image-slice: 1;
+    /* Ensure the entire border is covered with gradient */
+}
+
+.message {
+    text-align: center;
+    margin-top: 15%;
+}
+
+
+/* .row {
+    filter: blur(50px);
+    border-radius: 15px;
+    content: "";
+    animation: spin 2s linear infinite;
+    z-index: 1;
+} */

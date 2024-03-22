@@ -1,0 +1,22 @@
+<!-- <div class="col" *ngFor="let item of images"> -->
+
+<!-- {{item.message}} -->
+
+<!-- <img [src]="item.url" alt=""> -->
+<!-- 
+</div> -->
+<ng-template #template let-data="data" class="popup">
+    <i class="fa-solid fa-xmark text-white"></i>
+
+    <h2 class=" p-1 fw-normal text-white">{{ displaymessage }}</h2>
+
+</ng-template>
+
+<div class="container-fluid">
+    <div class="row skills ">
+        <h2 class="text-center "><i class="fa-solid fa-brain"></i> My Skills</h2>
+        <div class="col-md-1 image text-center  " *ngFor="let item of images">
+            <img [src]="item.url" alt="" class="images " (click)="popupmessage(item.message,template, $event)">
+        </div>
+    </div>
+</div>

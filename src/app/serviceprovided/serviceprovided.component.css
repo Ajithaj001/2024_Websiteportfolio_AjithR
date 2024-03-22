@@ -1,0 +1,44 @@
+/* .slider {
+    overflow: hidden;
+}
+
+.slides {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides li {
+    flex: 0 0 auto;
+    width: 100%;
+} */
+
+.service {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 80%;
+    /* Ensure the image does not exceed the width of its container */
+    max-height: 80%;
+    /* Ensure the image does not exceed the height of its container */
+    display: block;
+    /* Ensure the image does not create extra space around it */
+    margin: auto;
+    /* Center the image horizontally */
+}
+
+.card {
+    background: linear-gradient(to bottom, #465b70, #ecf0f1);
+}
+
+.card {
+    height: 300px;
+    /* Set a fixed height for the card */
+}
+
+.details {
+    overflow-y: scroll;
+}

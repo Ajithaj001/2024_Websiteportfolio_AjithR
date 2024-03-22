@@ -1,0 +1,7 @@
+.pannel {
+    background: linear-gradient(to bottom, #465b70, #ecf0f1);
+}
+
+.pannelmain {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,18 @@
+<div class="row" class="pannelmain">
+    <h2 class="text-center"><i class="fa-solid fa-diagram-project"></i>Project details</h2>
+    <div class="col">
+        <mat-accordion *ngFor="let item of projects">
+
+            <mat-expansion-panel class="pannel">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        {{item.name}}
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+                {{item.description}}
+            </mat-expansion-panel>
+        </mat-accordion>
+
+    </div>
+</div>

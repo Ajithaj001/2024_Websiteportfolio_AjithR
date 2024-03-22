@@ -1,0 +1,9 @@
+#scrollToTopButton {
+    /* Initially hide the button */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: rgb(14, 15, 14);
+    color: white;
+}

@@ -1,0 +1,72 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: #595858; */
+    background: linear-gradient(to bottom, #465b70, #ecf0f1);
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a shadow for visual separation */
+}
+
+
+/* .header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+.main {
+    padding-top: 60px;
+}
+
+.nav-link.active {
+    color: #3d08eb;
+    /* Change to your desired active link color */
+    font-weight: bold;
+    /* Optionally, you can add more styling */
+}
+
+.btn {
+    background: linear-gradient(to bottom, #465b70, #ecf0f1);
+}
+
+.footer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    /* Hide the button by default */
+}
+
+.scroll-up-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* .header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+   
+} */
+
+.header a:hover {
+    text-decoration: underline;
+}

@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+    /* You can add global styles to this file, and also import other style files */
+    /*     
+    body {
+        background: linear-gradient(to bottom, #34495e, #ecf0f1);
+        background-color: yellowgreen;
+        backdrop-filter: blur(8px);
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        overflow-x: hidden;
+        
+    } */
+    
+    body {
+        overflow-x: hidden;
+        background: linear-gradient(to bottom, #e9edf2, #cbc8c2);
+    }
+    /* html,
+    body {
+        margin: 0;
+        padding: 0;
+    } */
+    /* .custom-dialog-container {
+        position: relative;
+        margin-top: 10px;
+        margin-left: 10px;
+    } */
