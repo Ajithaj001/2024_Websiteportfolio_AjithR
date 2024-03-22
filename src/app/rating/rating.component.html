@@ -1,0 +1,29 @@
+<div class="row mt-3 justify-content-end">
+    <div class="col-md-12 d-flex justify-content-end">
+        <button matTooltip="Rate My Resume"><i class="fa-solid fa-star" (click)="popupmessage(template, $event)"></i></button>
+    </div>
+</div>
+
+
+
+<ng-template #template class="popup text-white">
+    <i class="fa-solid text-white fs-1 fa-rectangle-xmark" matTooltip="close" (click)="close()"></i>
+
+    <div style="white-space: nowrap;" class="d-flex justify-content-center star">
+        <div *ngFor="let item of rating" style="display: inline-block;">
+            <i style="color: gold;" class="fa-solid text-white fs-3 fa-star" (click)="ratemessage(item.id, item.message)"></i>
+        </div>
+
+    </div>
+
+    <div [ngSwitch]="switchid" class="d-flex justify-content-center text-white">
+        <p *ngSwitchCase="1"><i class="fa-solid fs-1 fa-face-meh-blank"></i></p>
+        <p *ngSwitchCase="2"><i class="fa-solid fs-1 fa-face-meh"></i></p>
+        <p *ngSwitchCase="3"><i class="fa-solid fs-1 fa-face-grin-wide"></i></p>
+        <p *ngSwitchCase="4"><i class="fa-solid fs-1 fa-face-grin-tears"></i></p>
+        <p *ngSwitchCase="5"><i class="fa-solid fs-1 fa-face-grin-hearts"></i></p>
+        <p *ngSwitchDefault>Rate My Resume</p>
+    </div>
+    <h1 class="text-white">{{displaymessage}}</h1>
+
+</ng-template>

@@ -14,6 +14,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ScrollTopComponent } from './scroll-top/scroll-top.component';
+import { RatingComponent } from './rating/rating.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -24,7 +27,8 @@ import { ScrollTopComponent } from './scroll-top/scroll-top.component';
     EducationComponent,
     ServiceprovidedComponent,
     ProjectsComponent,
-    ScrollTopComponent
+    ScrollTopComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,9 @@ import { ScrollTopComponent } from './scroll-top/scroll-top.component';
     BrowserAnimationsModule,
     MatDialogModule,
     MatExpansionModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTooltipModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

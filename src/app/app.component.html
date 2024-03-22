@@ -3,20 +3,22 @@
     <div class="row ">
         <header class="col header">
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-10">
                     <i class="fa-solid fs-4 fa-address-card"></i>&nbsp; <span class="fs-4 text-primary">AJ</span>Portfolio
                 </div>
                 <div class="col d-flex gap-4">
                     <a href="#home" class="nav-link" id="active-home"><i class="fa-solid fa-house"></i>Home</a>
                     <a href="#about" class="nav-link" id="active-about"><i class="fa-solid fa-circle-info"></i>About</a>
                     <a href="#service" class="nav-link" id="active-service"><i class="fa-solid fa-computer"></i>Service</a>
-                    <a href="#contact" class="nav-link" id="active-contact"><i class="fa-solid fa-address-book"></i>Contact</a>
+                    <!-- <a href="#contact" class="nav-link" id="active-contact"><i class="fa-solid fa-address-book"></i>Contact</a> -->
                 </div>
             </div>
         </header>
     </div>
 
+
     <main class="main">
+        <app-rating></app-rating>
 
         <section id="home" #homeSection>
             <app-home></app-home>
@@ -81,7 +83,7 @@
 
                     </div><br>
                     <div class="col justify-content-center">
-                        <button type="submit" class="btn  ">Submit</button>
+                        <button type="submit" class="btn btn-primary text-black ">Submit</button>
                     </div>
 
                 </form>

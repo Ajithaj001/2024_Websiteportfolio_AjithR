@@ -15,8 +15,13 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+.image img:hover {
+    transition: transform 0.3s;
+}
+
 .popup {
     background-color: #34495e;
+    text-align: center;
 }
 
 .custom-dialog-container {

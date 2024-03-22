@@ -23,6 +23,7 @@
 
 .nav-link.active {
     color: #3d08eb;
+    transform: scale(1.1);
     /* Change to your desired active link color */
     font-weight: bold;
     /* Optionally, you can add more styling */
@@ -30,6 +31,7 @@
 
 .btn {
     background: linear-gradient(to bottom, #465b70, #ecf0f1);
+    border: none;
 }
 
 .footer {
@@ -67,6 +69,12 @@
    
 } */
 
+.header a {
+    transition: transform 0.3s;
+}
+
 .header a:hover {
     text-decoration: underline;
+    transform: scale(1.1);
+    color: #3d08eb;
 }

@@ -1,0 +1,28 @@
+.popup {
+    overflow: auto;
+}
+
+::ng-deep .mat-mdc-dialog-container {
+    overflow-x: hidden;
+    /* --mdc-dialog-container-color: rgba(71, 92, 113, 0.7); */
+}
+
+.star:hover i {
+    color: gold;
+}
+
+i:hover {
+    color: gold;
+}
+
+::ng-deep .mat-mdc-dialog-container .star i {
+    color: gold;
+    /* --mdc-dialog-container-color: rgba(71, 92, 113, 0.7); */
+}
+
+@media (max-width: 767px) {
+     ::ng-deep .mat-mdc-dialog-container {
+        margin-right: 30%;
+        /* --mdc-dialog-container-color: rgba(71, 92, 113, 0.7); */
+    }
+}
