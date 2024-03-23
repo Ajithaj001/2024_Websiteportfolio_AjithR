@@ -50,9 +50,9 @@
             <div class="col-md-6">
                 <h2> <i class="fa-solid fa-address-book"></i>Contact</h2>
                 <div class="contact d-flex flex-wrap gap-3">
-                    <a href="https://www.linkedin.com/in/ajith-r-8a413617b"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
-                    <a><i class="fa-solid fa-envelope"></i>ajith98ra@gmail.com</a>
-                    <a><i class="fa-solid fa-phone"></i>+91-8870360992</a>
+                    <a matTooltip="Linkedin" href="https://www.linkedin.com/in/ajith-r-8a413617b"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+                    <a matTooltip="Gmail"><i class="fa-solid fa-envelope"></i>ajith98ra@gmail.com</a>
+                    <a matTooltip="Mobile Number"><i class="fa-solid fa-phone"></i>+91-8870360992</a>
                 </div><br>
 
                 <p><i class="fa-solid fa-copyright"></i>All content and materials on this website, including but not limited to text, images, graphics, logos, videos, code, are the intellectual property of Ajith R and protected by international copyright
@@ -68,22 +68,26 @@
                         <div class="col-md-6">
                             <input type="email" class="form-control" formControlName="firstName" placeholder="name">
                             <p class="text-danger" *ngIf="myForm.get('firstName')?.invalid && myForm.get('firstName')?.touched">
-                                enter name
+                                name should not be empty
                             </p>
 
                         </div>
                         <div class="col-md-6">
                             <input type="email" class="form-control" formControlName="email" placeholder="name@example.com">
-                            <p class="text-danger" *ngIf="myForm.get('email')?.invalid && myForm.get('email')?.touched">enter mail</p>
+                            <p class="text-danger" *ngIf="myForm.get('email')?.invalid && myForm.get('email')?.touched">email should not be empty</p>
                         </div>
-                        <div class="col-md-12"><br>
+                        <div class="col-md-12">
                             <textarea class="form-control" placeholder="Leave a comment here" formControlName="comments"></textarea>
-                            <p class="text-danger" *ngIf="myForm.get('comments')?.invalid && myForm.get('comments')?.touched"> enter comment</p>
+                            <p class="text-danger" *ngIf="myForm.get('comments')?.invalid && myForm.get('comments')?.touched">comment should not be empty</p>
                         </div>
 
                     </div><br>
-                    <div class="col justify-content-center">
-                        <button type="submit" class="btn btn-primary text-black ">Submit</button>
+                    <div class="row">
+
+
+                        <div class="col d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary text-black ">Submit</button>
+                        </div>
                     </div>
 
                 </form>

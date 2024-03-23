@@ -6,7 +6,8 @@
 <!-- 
 </div> -->
 <ng-template #template let-data="data" class="popup">
-    <i class="fa-solid fa-xmark text-white" (click)="closebox()"></i>
+    <i class="fa-solid fa-xmark fs-2  fa-rectangle-xmark text-white" (click)="closebox()"></i>
+
     <h1 class="text-white text-center">
         {{nameSkill}}</h1>
 
@@ -19,7 +20,7 @@
     <div class="row skills ">
         <h2 class="text-center "><i class="fa-solid fa-brain"></i> My Skills</h2>
         <div class="col-md-1 image text-center  " *ngFor="let item of images">
-            <img [src]="item.url" alt="" class="images " (click)="popupmessage(item.message,template, $event,item.name)">
+            <img [src]="item.url" alt="" class="images " matTooltip={{item.name}} (click)="popupmessage(item.message,template, $event,item.name)">
         </div>
     </div>
 </div>

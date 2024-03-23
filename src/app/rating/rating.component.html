@@ -9,21 +9,21 @@
 <ng-template #template class="popup text-white">
     <i class="fa-solid text-white fs-1 fa-rectangle-xmark" matTooltip="close" (click)="close()"></i>
 
-    <div style="white-space: nowrap;" class="d-flex justify-content-center star">
+    <div style="white-space: nowrap;" class="d-flex justify-content-center ">
         <div *ngFor="let item of rating" style="display: inline-block;">
-            <i style="color: gold;" class="fa-solid text-white fs-3 fa-star" (click)="ratemessage(item.id, item.message)"></i>
+            <i class="fa-solid star fs-3 fa-star" (click)="ratemessage(item.id, item.message)"></i>
         </div>
 
     </div>
 
-    <div [ngSwitch]="switchid" class="d-flex justify-content-center text-white">
+    <div [ngSwitch]="switchid" class="d-flex justify-content-center  switch" style="color: goldenrod;">
         <p *ngSwitchCase="1"><i class="fa-solid fs-1 fa-face-meh-blank"></i></p>
         <p *ngSwitchCase="2"><i class="fa-solid fs-1 fa-face-meh"></i></p>
         <p *ngSwitchCase="3"><i class="fa-solid fs-1 fa-face-grin-wide"></i></p>
         <p *ngSwitchCase="4"><i class="fa-solid fs-1 fa-face-grin-tears"></i></p>
         <p *ngSwitchCase="5"><i class="fa-solid fs-1 fa-face-grin-hearts"></i></p>
-        <p *ngSwitchDefault>Rate My Resume</p>
+        <p *ngSwitchDefault class="text-white">Rate My website</p>
     </div>
-    <h1 class="text-white">{{displaymessage}}</h1>
+    <h1 class="text-white text-center">{{displaymessage}}</h1>
 
 </ng-template>

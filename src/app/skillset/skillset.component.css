@@ -47,6 +47,10 @@
     }
      ::ng-deep .mat-mdc-dialog-container {
         margin-left: 30%;
+        width: 100%;
         /* --mdc-dialog-container-color: rgba(71, 92, 113, 0.7); */
     }
+    /* ::ng-deep .mat-mdc-dialog-surface {
+        width: 100%;
+    } */
 }

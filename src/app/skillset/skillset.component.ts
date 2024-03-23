@@ -36,6 +36,10 @@ export class SkillsetComponent {
   
     const dialogConfig = new MatDialogConfig();
     dialogConfig.width = '500px';
+    dialogConfig.maxWidth = '500px'; // Set the maximum width to 400px
+    dialogConfig.height = '300px'; // Auto height
+    dialogConfig.panelClass = 'custom-dialog-container'; // Apply custom styling to the dialog container
+
     // dialogConfig.position = { top: '15%', left: '40%' };
     dialogConfig.hasBackdrop = true;
     const viewportWidth = window.innerWidth;

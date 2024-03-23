@@ -15,9 +15,12 @@ i:hover {
     color: gold;
 }
 
-::ng-deep .mat-mdc-dialog-container .star i {
+.star i:hover {
     color: gold;
-    /* --mdc-dialog-container-color: rgba(71, 92, 113, 0.7); */
+}
+
+switch i {
+    color: goldenrod;
 }
 
 @media (max-width: 767px) {

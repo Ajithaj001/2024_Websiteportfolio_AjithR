@@ -22,7 +22,7 @@
 }
 
 .nav-link.active {
-    color: #3d08eb;
+    color: #087aeb;
     transform: scale(1.1);
     /* Change to your desired active link color */
     font-weight: bold;
@@ -76,5 +76,5 @@
 .header a:hover {
     text-decoration: underline;
     transform: scale(1.1);
-    color: #3d08eb;
+    color: #087aeb;
 }

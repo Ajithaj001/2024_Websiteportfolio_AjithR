@@ -19,8 +19,8 @@ export class RatingComponent {
     {id:1, message:"will work on the remarks thank you for the responce"},
     {id:2, message:"will improve more thank you for the responce"},
     {id:3,message:"thank you for the rating "},
-    {id:4, message:"thank you for the good review"},
-    {id:5,message:"thank you for the great review"}
+    {id:4, message:"thank you for the good rating"},
+    {id:5,message:"thank you for the great rating"}
 
   ]
   popupmessage(template: TemplateRef<any>,event: MouseEvent):void{
