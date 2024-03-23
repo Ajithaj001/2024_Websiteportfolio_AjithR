@@ -108,6 +108,13 @@ onWindowScroll(event: any) {
     
     if(this.myForm.valid){
       this.isdisplay = true
+      setTimeout(() => {
+        this.myForm.reset();
+        
+      }, 1000);
+      setTimeout(()=>{
+        this.isdisplay = false
+      },3000)
       
     }
     
