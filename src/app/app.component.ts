@@ -22,6 +22,7 @@ export class AppComponent {
   @ViewChild('contactSection')
   contactSectionRef!: ElementRef;
   showScrollButton = false;
+  loading: boolean = true;
 
 
   constructor(private fb: FormBuilder,private router: Router) {
@@ -32,13 +33,17 @@ export class AppComponent {
       email: ['', [Validators.required, Validators.email]],
       // Add more form controls as needed
     });
+    setTimeout(() => {
+      this.loading = false; // Set loading to false when content is loaded
+    }, 2000);
+  
     
   }
   
 
   
   @HostListener('window:scroll', ['$event'])
-  @HostListener('window:scroll', ['$event'])
+
 onWindowScroll(event: any) {
   const scrollOffset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
