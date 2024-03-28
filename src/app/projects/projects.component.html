@@ -1,16 +1,20 @@
 <div class="row" class="pannelmain">
-    <h2 class="text-center"><i class="fa-solid fa-diagram-project"></i>Project details</h2>
-    <div class="col">
-        <mat-accordion *ngFor="let item of projects">
+    <h2 class="text-center text-white"><i class="fa-solid fa-diagram-project text-primary"></i>&nbsp;Project details</h2>
+    <div class="col text-white">
+        <mat-accordion *ngFor="let item of projects" (click)="toChange()">
 
-            <mat-expansion-panel class="pannel">
+            <mat-expansion-panel class="pannel text-white">
                 <mat-expansion-panel-header>
-                    <mat-panel-title>
-                        <i class="fa-solid fa-arrow-right"></i>{{item.name}}
+                    <mat-panel-title class="text-white">
+
+                        <i class="fa-solid fa-arrow-up" *ngIf="isdisplay; else elseBlock"></i>&nbsp;{{item.name}}
+                        <ng-template #elseBlock>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </ng-template>
                     </mat-panel-title>
 
                 </mat-expansion-panel-header>
-                <i class="fa-solid fa-list"></i> {{item.description}}
+                <i class="fa-solid fa-list"></i> &nbsp;{{item.description}}
             </mat-expansion-panel>
         </mat-accordion>
 

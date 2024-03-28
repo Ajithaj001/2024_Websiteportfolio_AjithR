@@ -1,4 +1,8 @@
-<div class="container-fluid">
+<div class="galaxy">
+    <div class="star" *ngFor="let star of stars" [ngStyle]="star.style"></div>
+</div>
+
+<div class="container-fluid snowflake">
     <ng-template [ngIf]="loading">
         <div class="loader-container">
             <!-- Replace this with your loading animation or spinner -->
@@ -67,11 +71,11 @@
 
             <div class="row" id="contact" #contactSection>
                 <div class="col-md-6">
-                    <h2> <i class="fa-solid fa-address-book"></i>Contact</h2>
+                    <h2> <i class="fa-solid fa-address-book text-primary"></i>&nbsp;Contact</h2>
                     <div class="contact d-flex flex-wrap gap-3">
-                        <a matTooltip="Linkedin" href="https://www.linkedin.com/in/ajith-r-8a413617b"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
-                        <a matTooltip="Gmail"><i class="fa-solid fa-envelope"></i>ajith98ra@gmail.com</a>
-                        <a matTooltip="Mobile Number"><i class="fa-solid fa-phone"></i>+91-8870360992</a>
+                        <a matTooltip="Linkedin" href="https://www.linkedin.com/in/ajith-r-8a413617b"><i class="fa-brands fa-linkedin text-primary"></i>&nbsp;Linkedin</a>
+                        <a matTooltip="Gmail"><i class="fa-solid fa-envelope text-primary"></i>&nbsp;ajith98ra@gmail.com</a>
+                        <a matTooltip="Mobile Number"><i class="fa-solid fa-phone text-primary"></i>&nbsp;+91-8870360992</a>
                     </div><br>
 
                     <p><i class="fa-solid fa-copyright"></i>All content and materials on this website, including but not limited to text, images, graphics, logos, videos, code, are the intellectual property of Ajith R and protected by international copyright
@@ -79,7 +83,7 @@
                         prohibited and may resultin legal action. FOr inquiries regarding the use or licensing of any materil on this website, please contact ajith98ra@gmail.com . Ajith R 2023 All Rights Reserved</p>
                 </div>
                 <div class="col-md-6">
-                    <h2><i class="fa-solid fa-handshake"></i>Keep in touch</h2>
+                    <h2><i class="fa-solid fa-handshake text-primary"></i>&nbsp;Keep in touch</h2>
                     <h3 class="text-success text-success" *ngIf=" isdisplay"> <i class="fa-solid fa-circle-check"></i>thank you {{name}} ! will get back to you</h3>
                     <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
 
@@ -105,7 +109,7 @@
 
 
                             <div class="col d-flex justify-content-center">
-                                <button type="submit" class="btn btn-primary text-black ">Submit</button>
+                                <button type="submit" class="btn btn-primary  ">Submit</button>
                             </div>
                         </div>
 

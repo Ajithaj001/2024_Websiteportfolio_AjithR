@@ -18,7 +18,7 @@
 
 <div class="container-fluid">
     <div class="row skills ">
-        <h2 class="text-center "><i class="fa-solid fa-brain"></i> My Skills</h2>
+        <h2 class="text-center text-white"><i class="fa-solid fa-brain text-primary"></i> &nbsp;My Skills</h2>
         <div class="col-md-1 image text-center  " *ngFor="let item of images">
             <img [src]="item.url" alt="" class="images " matTooltip={{item.name}} (click)="popupmessage(item.message,template, $event,item.name)">
         </div>

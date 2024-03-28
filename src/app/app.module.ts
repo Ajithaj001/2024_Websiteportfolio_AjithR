@@ -19,6 +19,12 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatButtonModule} from '@angular/material/button';
 
 
+// import { NgxParticlesModule } from '@tsparticles/angular';
+
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +37,8 @@ import {MatButtonModule} from '@angular/material/button';
     RatingComponent
   ],
   imports: [
-    BrowserModule,
+  
+  BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
@@ -39,7 +46,12 @@ import {MatButtonModule} from '@angular/material/button';
     MatExpansionModule,
     ReactiveFormsModule,
     MatTooltipModule,
-    MatButtonModule
+    MatButtonModule,
+   
+    
+   
+    // NgxParticlesModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

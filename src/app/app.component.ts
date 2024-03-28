@@ -1,12 +1,16 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'portfolio';
   myForm: FormGroup;
@@ -23,9 +27,15 @@ export class AppComponent {
   contactSectionRef!: ElementRef;
   showScrollButton = false;
   loading: boolean = true;
+  dots: any[] = Array.from({ length: 100 });
+  stars: any[] = [];
+  
+  
 
 
   constructor(private fb: FormBuilder,private router: Router) {
+    console.log(this.dots);
+    
     this.myForm = this.fb.group({
       // Define form controls and their initial values and validators
       firstName: ['', Validators.required],
@@ -39,6 +49,33 @@ export class AppComponent {
   
     
   }
+  ngOnInit(): void {
+    this.generateStars();
+  }
+
+  // Function to generate a random number between min and max
+  randomRange(min: number, max: number): number {
+    return Math.random() * (max - min) + min;
+  }
+
+  // Create stars dynamically
+  generateStars(): void {
+    const numStars = 300; // Adjust the number of stars as needed
+
+    for (let i = 0; i < numStars; i++) {
+      const star = {
+        style: {
+          left: `${this.randomRange(0, 100)}vw`, // Random horizontal position
+          top: `${this.randomRange(0, 100)}vh`, // Random vertical position
+          'animation-duration': `${this.randomRange(5, 15)}s` // Random animation duration
+        }
+      };
+      this.stars.push(star);
+    }
+  }
+ 
+
+
   
 
   

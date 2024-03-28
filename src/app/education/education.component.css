@@ -18,11 +18,22 @@
 
 .card {
     margin-left: 20px;
+    /* opacity: 0.6; */
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: transparent;
+    border: 2px solid white;
 }
 
 .card-body {
-    background: linear-gradient(to bottom, #465b70, #ecf0f1);
-    backdrop-filter: blur(8px);
+    /* background: linear-gradient(to bottom, #465b70, #ecf0f1); */
+    /* backdrop-filter: blur(8px); */
+    /* background-color: rgba(255, 255, 255, 0.5);
+    color: white; */
+    /* background-color: transparent; */
+    color: #f4f1f1;
+    /* Set text color to a darker tone */
+    /* background-color: rgba(0, 0, 0, 0); */
+    /* Transparent black */
 }
 
 @media (max-width: 767px) {
