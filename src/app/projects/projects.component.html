@@ -7,14 +7,14 @@
                 <mat-expansion-panel-header>
                     <mat-panel-title class="text-white">
 
-                        <i class="fa-solid fa-arrow-up" *ngIf="isdisplay; else elseBlock"></i>&nbsp;{{item.name}}
+                        <i class="fa-solid fa-arrow-up text-primary" *ngIf="isdisplay; else elseBlock"></i>&nbsp;{{item.name}}
                         <ng-template #elseBlock>
-                            <i class="fa-solid fa-arrow-down"></i>
+                            <i class="fa-solid fa-arrow-down text-primary"></i>
                         </ng-template>
                     </mat-panel-title>
 
                 </mat-expansion-panel-header>
-                <i class="fa-solid fa-list"></i> &nbsp;{{item.description}}
+                <i class="fa-solid fa-list text-primary"></i> &nbsp;{{item.description}}
             </mat-expansion-panel>
         </mat-accordion>
 
